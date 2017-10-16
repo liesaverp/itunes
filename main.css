@@ -3,6 +3,13 @@ img {
     height: auto;
 }
 
+p {
+    font-size: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: justify left;
+}
+
 .headertext {
     position: absolute;
     left: 50%;
@@ -16,7 +23,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
-    background-image: url(style-img/background4.jpg);
 }
 
 .container {
@@ -39,7 +45,7 @@ button {
     border-top-left-radius: 0px;
     padding: 10px;
     color: #151e25;
-    font-family: lato;
+    font-family: 'Permanent Marker', cursive;
     text-transform: uppercase;
     font-size: 25px;
     text-align: center;
@@ -59,6 +65,7 @@ button:hover {
     width:100%;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    font-family: lato;
 }
 
 .buy:hover {
@@ -66,13 +73,48 @@ button:hover {
 }
 
 .hide {
-    background-color: blue;
+    background-color: rgba(255,255,255,0.5);
+    font-size: 12px;
+    box-shadow: 0px 5px 2px #888888;
+}
+
+ol {
+    font-size: 14px;
+    text-transform: lowercase;
+    margin-top: 10px;
+}
+
+li:first-letter {
+    text-transform: uppercase;
+}
+
+iframe {
+    margin: 0px;
+    padding: 0px;
+    width: 100%
+}
+
+.balk {
+    background-color: red;
+    font-size: 24px;
+    font-family: 'Permanent Marker', cursive
+}
+
+h2 {
+    float:right;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    padding-right: 5px;
+    padding-top: 5px;
 }
 /* Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap */
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+    body {
+        background-image: url(style-img/background4.jpg);
+    }
 
 }
 
