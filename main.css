@@ -1,10 +1,15 @@
 img {
     width: 100%;
-    height: auto;
+    margin-top: 10px;
+}
+
+.downsize {
+    max-height: 30%;
 }
 
 p {
     font-size: 12px;
+    padding-top:10px;
     padding-left: 12px;
     padding-right: 12px;
     text-align: justify left;
@@ -108,9 +113,10 @@ h2 {
     float:right;
     font-family: 'Permanent Marker', cursive;
     font-size: 30px;
-    padding-right: 5px;
-    padding-top: 5px;
+    padding-right: 20px;
+    padding-top: 10px;
 }
+
 
 footer {
     padding-top: 0px;
@@ -118,9 +124,21 @@ footer {
     padding-right: 20px;
     background-color: rgba(255,255,255,0.2);
     text-align: center;
-    color: white;
+    color: rgba(255,255,255,0.6);
     margin: 0px;
+    font-size: 10px;
 }
+
+.icon {
+    width:20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: right;
+    float: right;
+    position: relative;
+}
+
 /* Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap */
 
@@ -129,12 +147,24 @@ No media query since this is the default in Bootstrap */
     body {
         background-image: url(style-img/background4.jpg);
     }
+    
+    .icon {
+        width:30px;
+        height: 30px;
+    }
 
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 
+    p {
+        font-size: 14px;
+        padding-top:10px;
+        padding-left: 12px;
+        padding-right: 12px;
+        text-align: justify left;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
